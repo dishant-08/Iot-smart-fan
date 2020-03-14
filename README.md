@@ -102,7 +102,7 @@ String sendData(String command, const int timeout, boolean debug)
 
 {
 
-  String response = ""; 
+  String response = " "; 
 
   esp8266.print(command);           // Send the command to the ESP8266
 
@@ -112,7 +112,7 @@ String sendData(String command, const int timeout, boolean debug)
 
   {
 
-    while(esp8266.available();
+    while(esp8266.available()) ;
 
     {
 
